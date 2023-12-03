@@ -31,24 +31,6 @@ sidebarToggle.addEventListener("click", () => {
     }
 })
 //geting live data from API 
-/*
-  document.addEventListener("DOMContentLoaded", () => {
-    const cryptoList = document.getElementById('cryptoList');
-  
-    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false')
-      .then(response => response.json())
-      .then(data => {
-        data.forEach(coin => {
-          const listItem = document.createElement('li');
-          listItem.innerHTML = `
-            <span>${coin.name}</span>: $${coin.current_price.toFixed(2)} (${coin.price_change_percentage_24h.toFixed(2)}%)
-          `;
-          cryptoList.appendChild(listItem);
-        });
-      })
-      .catch(error => console.log(error));
-  });
-  */
  // Fetch data from CoinGecko API
  document.addEventListener('DOMContentLoaded', () => {
   const cryptoData = document.getElementById('cryptoData');
