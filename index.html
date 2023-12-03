@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta cahrsert="utf-8">
+        <meta httpp-equiv="X-UA-Compatible" content="IE=edge">
+ 
+        <!--custom css link here-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
+
+        <!--boxicons link here-->
+         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+         <title>ZCRYPTO</title>
+    </head>
+    <body>
+        <nav>
+            <div class="logo-name">
+                <div class="logo-image">
+                  <img src="logo.jpg" alt=" ">
+            </div>
+            <span class="logo-name"> ZCRYPTO</span>
+            </div>
+            <!--Menu items-->
+            <div class="menu-items">
+                <ul class="nav-links">
+                    <li><a href="#">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Dashboard</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="uil uil-user"></i>
+                        <span class="link-name">Profile</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="uil uil-wallet"></i>
+                        <span class="link-name">Wallet</span>
+                    </a></li><li><a href="#">
+                        <i class="uil uil-transaction"></i>
+                        <span class="link-name">Transaction</span>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="uil uil-bell"></i>
+                        <span class="link-name">Notification</span>
+                    </a></li>
+                    </ul>
+                    <ul class="logout-mode">
+                    <li><a href="#">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Log Out</span>
+                    </a></li>
+                    <li class="mode"><a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+                    <div class="mode-toggle">
+                    <span class="switch"></span>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="dashboard">
+            <div class="top">
+                <i class="uil uil-bars sidebar-toggle"></i>
+               <!--Search Box-->
+                <div class="search-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search here.....">
+                </div>
+                <img src="profile.jpg" alt="">
+            </div>
+             <!--creating boxes for diffrent content-->
+            <div class="dash-content">
+                <div class="overview">
+                    <div class="title">
+                        <i class="uil uil-analytics"></i>
+                        <span class="text">Dashboard</span>
+                    </div>
+
+                    <div class="boxes">
+                        <div class="box box1">
+                            <i class="uil uil-money-bill"></i>
+                            <span class="text">Balance</span>
+                            <span class="number">$3933</span>
+                        </div>
+                        <div class="box box2">
+                            <i class="uil uil-money-insert"></i>
+                            <span class="text">Investment</span>
+                            <span class="number">$2534</span>
+                        </div>
+                        <div class="box box3">
+                            <i class="uil uil-money-withdrawal"></i>
+                            <span class="text">Profit</span>
+                            <span class="number">$1232</span>
+                        </div>
+                    </div>
+                </div>
+                 <!--second part of dashboard-->
+
+                <div class="activity">
+                    <div class="overview">
+                        <div class="title">
+                            <i class="uil uil-store"></i>
+                            <span class="text">Market price</span>
+                        </div> 
+                        <!--start adding market data-->
+                        <table id="cryptoTable">
+                            <thead>
+                                <tr>
+                                    <th>Coin</th>
+                                    <th>Market Price (USD)</th>
+                                    <th>1D Change (%)</th>
+                                    <th>24H Change (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cryptoData"></tbody>
+                        </table>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
